@@ -1,0 +1,20 @@
+{
+  "name": "auto-version-downloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "download": "^7.1.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.4",
+    "semver": "^5.5.0",
+    "tunnel": "0.0.6",
+    "yargs": "^13.2.4"
+  }
+}
