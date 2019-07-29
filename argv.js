@@ -1,4 +1,5 @@
 const yargs = require('yargs');
+const bytes = require('bytes');
 
 module.exports = yargs
     .command('download [path]', 'download programs', yargs => 
@@ -6,6 +7,11 @@ module.exports = yargs
             .positional('path', {
                 describe: 'Path where files will be downloaded to',
                 default: './downloads',
+            })
+            .option('zip-path', { type: 'string' })
+            .option('zip-max-file-size', { 
+                type: 'string',
+                coerce: bytes.parse,
             })
     )
     .option('modules-path', { 
